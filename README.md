@@ -12,7 +12,7 @@ PerfectlyCache automatically redirects the same query to the model when you need
 Execute the following command to get the latest version of the package:
 
 ```
-composer require MTGofa/perfectly-cache
+composer require mtgofa/perfectly-cache
 ```
 
 - Publish Configuration
