@@ -1,5 +1,5 @@
 {
-    "name": "whtht/perfectly-cache",
+    "name": "mtgofa/perfectly-cache",
     "description": "Laravel database cache package",
     "license": "MIT",
     "authors": [{
@@ -13,19 +13,19 @@
     },
     "autoload": {
         "psr-4": {
-            "Whtht\\PerfectlyCache\\": "src/"
+            "mtgofa\\PerfectlyCache\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Whtht\\PerfectlyCache\\Providers\\PerfectlyCacheServiceProvider"
+                "mtgofa\\PerfectlyCache\\Providers\\PerfectlyCacheServiceProvider"
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Whtht\\PerfectlyCache\\Tests\\": "./tests/"
+            "mtgofa\\PerfectlyCache\\Tests\\": "./tests/"
         }
     },
     "scripts": {
