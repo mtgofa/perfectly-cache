@@ -6,12 +6,12 @@
  * Time: 16:12
  */
 
-namespace Whtht\PerfectlyCache\Builders;
+namespace MTGofa\PerfectlyCache\Builders;
 
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Facades\Cache;
-use Whtht\PerfectlyCache\PerfectlyCache;
+use MTGofa\PerfectlyCache\PerfectlyCache;
 
 class QueryBuilder extends Builder
 {

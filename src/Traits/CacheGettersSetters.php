@@ -6,7 +6,7 @@
  * Time: 15:35
  */
 
-namespace Whtht\PerfectlyCache\Traits;
+namespace MTGofa\PerfectlyCache\Traits;
 
 
 trait CacheGettersSetters

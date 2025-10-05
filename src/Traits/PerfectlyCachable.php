@@ -1,12 +1,12 @@
 <?php
 
-namespace Whtht\PerfectlyCache\Traits;
+namespace MTGofa\PerfectlyCache\Traits;
 
 
-use Whtht\PerfectlyCache\Builders\EloquentBuilder;
-use Whtht\PerfectlyCache\Builders\QueryBuilder;
-use Whtht\PerfectlyCache\Events\ModelEvents;
-use Whtht\PerfectlyCache\PerfectlyCache;
+use MTGofa\PerfectlyCache\Builders\EloquentBuilder;
+use MTGofa\PerfectlyCache\Builders\QueryBuilder;
+use MTGofa\PerfectlyCache\Events\ModelEvents;
+use MTGofa\PerfectlyCache\PerfectlyCache;
 
 trait PerfectlyCachable
 {

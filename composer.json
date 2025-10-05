@@ -13,19 +13,19 @@
     },
     "autoload": {
         "psr-4": {
-            "mtgofa\\PerfectlyCache\\": "src/"
+            "MTGofa\\PerfectlyCache\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "mtgofa\\PerfectlyCache\\Providers\\PerfectlyCacheServiceProvider"
+                "MTGofa\\PerfectlyCache\\Providers\\PerfectlyCacheServiceProvider"
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "mtgofa\\PerfectlyCache\\Tests\\": "./tests/"
+            "MTGofa\\PerfectlyCache\\Tests\\": "./tests/"
         }
     },
     "scripts": {

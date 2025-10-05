@@ -6,7 +6,7 @@
  * Time: 14:07
  */
 
-namespace Whtht\PerfectlyCache\Builders;
+namespace MTGofa\PerfectlyCache\Builders;
 
 
 use Illuminate\Database\Eloquent\Builder;

@@ -6,10 +6,10 @@
  * Time: 15:01
  */
 
-namespace Whtht\PerfectlyCache\Tests\Models;
+namespace MTGofa\PerfectlyCache\Tests\Models;
 
 
-use Whtht\PerfectlyCache\Traits\PerfectlyCachable;
+use MTGofa\PerfectlyCache\Traits\PerfectlyCachable;
 use Illuminate\Database\Eloquent\Model;
 
 class PostWithCache extends Model

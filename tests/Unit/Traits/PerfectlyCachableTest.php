@@ -1,13 +1,13 @@
 <?php
 
-namespace Whtht\PerfectlyCache\Tests\Unit\Traits;
+namespace MTGofa\PerfectlyCache\Tests\Unit\Traits;
 
-use Whtht\PerfectlyCache\PerfectlyCache;
-use Whtht\PerfectlyCache\Tests\Models\Post;
-use Whtht\PerfectlyCache\Tests\Models\PostWithCache;
-use Whtht\PerfectlyCache\Tests\Models\User;
-use Whtht\PerfectlyCache\Tests\Models\UserWithCache;
-use Whtht\PerfectlyCache\Tests\TestCase;
+use MTGofa\PerfectlyCache\PerfectlyCache;
+use MTGofa\PerfectlyCache\Tests\Models\Post;
+use MTGofa\PerfectlyCache\Tests\Models\PostWithCache;
+use MTGofa\PerfectlyCache\Tests\Models\User;
+use MTGofa\PerfectlyCache\Tests\Models\UserWithCache;
+use MTGofa\PerfectlyCache\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
 
 class PerfectlyCachableTest extends TestCase

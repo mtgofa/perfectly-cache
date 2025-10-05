@@ -6,10 +6,10 @@
  * Time: 11:29
  */
 
-namespace Whtht\PerfectlyCache\Tests;
+namespace MTGofa\PerfectlyCache\Tests;
 
 
-use Whtht\PerfectlyCache\Providers\PerfectlyCacheServiceProvider;
+use MTGofa\PerfectlyCache\Providers\PerfectlyCacheServiceProvider;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Storage;
 
@@ -52,7 +52,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases($app)
     {
         return [
-            'PerfectlyCache' => 'Whtht\PerfectlyCache\Facades\PerfectlyCache'
+            'PerfectlyCache' => 'MTGofa\PerfectlyCache\Facades\PerfectlyCache'
         ];
     }
 

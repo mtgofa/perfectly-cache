@@ -6,12 +6,12 @@
  * Time: 15:47
  */
 
-namespace Whtht\PerfectlyCache;
+namespace MTGofa\PerfectlyCache;
 
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Cache;
-use Whtht\PerfectlyCache\Builders\QueryBuilder;
+use MTGofa\PerfectlyCache\Builders\QueryBuilder;
 
 class PerfectlyCache
 {

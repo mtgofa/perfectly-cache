@@ -6,11 +6,11 @@
  * Time: 16:59
  */
 
-namespace Whtht\PerfectlyCache\Commands;
+namespace MTGofa\PerfectlyCache\Commands;
 
 
 use Illuminate\Console\Command;
-use Whtht\PerfectlyCache\PerfectlyCache;
+use MTGofa\PerfectlyCache\PerfectlyCache;
 
 class PerfectlyCacheClearCommand extends Command
 {

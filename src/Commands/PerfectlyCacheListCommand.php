@@ -6,7 +6,7 @@
  * Time: 17:26
  */
 
-namespace Whtht\PerfectlyCache\Commands;
+namespace MTGofa\PerfectlyCache\Commands;
 
 
 use Illuminate\Console\Command;

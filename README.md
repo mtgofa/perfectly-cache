@@ -12,13 +12,13 @@ PerfectlyCache automatically redirects the same query to the model when you need
 Execute the following command to get the latest version of the package:
 
 ```
-composer require whtht/perfectly-cache
+composer require MTGofa/perfectly-cache
 ```
 
 - Publish Configuration
 
 ```
-php artisan vendor:publish --provider="Whtht\PerfectlyCache\Providers\PerfectlyCacheServiceProvider"
+php artisan vendor:publish --provider="MTGofa\PerfectlyCache\Providers\PerfectlyCacheServiceProvider"
 ```
 
 - Use trait on your models   
@@ -29,7 +29,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-use Whtht\PerfectlyCache\Traits\PerfectlyCachable;
+use MTGofa\PerfectlyCache\Traits\PerfectlyCachable;
 
 class User extends Model
 {

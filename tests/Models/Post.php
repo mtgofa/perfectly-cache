@@ -6,7 +6,7 @@
  * Time: 14:56
  */
 
-namespace Whtht\PerfectlyCache\Tests\Models;
+namespace MTGofa\PerfectlyCache\Tests\Models;
 
 
 use Illuminate\Database\Eloquent\Model;
