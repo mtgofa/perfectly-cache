@@ -11,9 +11,6 @@ namespace MTGofa\PerfectlyCache\Providers;
 use Illuminate\Support\ServiceProvider;
 use MTGofa\PerfectlyCache\Commands\PerfectlyCacheClearCommand;
 use MTGofa\PerfectlyCache\Commands\PerfectlyCacheListCommand;
-use MTGofa\PerfectlyCache\Events\ModelEvents;
-use MTGofa\PerfectlyCache\Extensions\PerfectlyStore;
-use MTGofa\PerfectlyCache\Listeners\ModelDispactEventListener;
 use MTGofa\PerfectlyCache\PerfectlyCache;
 
 class PerfectlyCacheServiceProvider extends ServiceProvider

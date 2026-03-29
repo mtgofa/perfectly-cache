@@ -63,7 +63,7 @@ class QueryBuilder extends Builder
             $this->cacheKey = PerfectlyCache::generateCacheKey($this->getTable(), $this->toSql(), $this->getBindings(), $this->getCacheMinutes());
 
             $calculatedCacheMinutes = PerfectlyCache::calcultateCacheMinutes($this->cacheMinutes);
-            return Cache::remember($this->cacheKey, $calculatedCacheMinutes, function () use ($columns) {
+            $rows = Cache::remember($this->cacheKey, $calculatedCacheMinutes, function () use ($columns) {
 
                 $pck = Cache::get("perfectly_cache_keys", []);
 
@@ -71,8 +71,12 @@ class QueryBuilder extends Builder
 
                 Cache::forever("perfectly_cache_keys", array_values(array_unique($pck)));
 
-                return parent::get($columns);
+                // Store plain rows only. Serializing Illuminate\Support\Collection in the cache
+                // can yield __PHP_Incomplete_Class when unserialize() runs before autoloading.
+                return parent::get($columns)->all();
             });
+
+            return collect($rows);
         }
 
         return parent::get($columns);

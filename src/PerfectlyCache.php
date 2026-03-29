@@ -49,7 +49,8 @@ class PerfectlyCache
 
         $sql = md5($bindedSql);
 
-        return "{$table}_-_{$sql}_-_{$minutes}";
+        // Suffix invalidates older entries that stored serialized Collections (Laravel 11+ / PHP 8.4).
+        return "{$table}_-_{$sql}_-_{$minutes}_rows_v2";
     }
 
     /**
