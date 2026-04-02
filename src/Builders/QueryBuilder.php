@@ -71,12 +71,16 @@ class QueryBuilder extends Builder
 
                 Cache::forever("perfectly_cache_keys", array_values(array_unique($pck)));
 
-                // Store plain rows only. Serializing Illuminate\Support\Collection in the cache
-                // can yield __PHP_Incomplete_Class when unserialize() runs before autoloading.
-                return parent::get($columns)->all();
+                // Store JSON-serializable arrays only. Raw stdClass rows (e.g. aggregate counts from
+                // paginate()) can deserialize as incomplete objects in PHP 8+, breaking pagination.
+                return array_map(static function ($row) {
+                    return json_decode(json_encode($row), true);
+                }, parent::get($columns)->all());
             });
 
-            return collect($rows);
+            return collect($rows)->map(static function ($row) {
+                return is_array($row) ? (object) $row : $row;
+            });
         }
 
         return parent::get($columns);
